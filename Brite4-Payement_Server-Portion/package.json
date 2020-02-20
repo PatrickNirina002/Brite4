@@ -1,0 +1,16 @@
+{
+  "name": "Portion_payement",
+  "version": "1.0.0",
+  "description": "Payement server for Portion",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.19.2",
+    "socket.io": "^2.2.0"
+  }
+}

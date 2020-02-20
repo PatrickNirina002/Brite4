@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Socket.io</title>
+    </head>
+ 
+    <body>
+        <h1>Communication avec socket.io !</h1>
+        <button class="send-message" onclick="sendMessage()">Send message</button>
+        
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            var socket = io.connect('http://localhost:3037');
+
+            function sendMessage() {
+                console.log("a message is sending to the server");
+                socket.emit('message', 'sent message');
+            }
+        </script>
+    </body>
+</html>
